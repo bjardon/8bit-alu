@@ -1,0 +1,46 @@
+----------------------------------------------------------------------
+Report for cell Top.TECH
+Register bits:  44 of 7209 (0.610%)
+I/O cells:      41
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        18          100.0
+                            FD1P3AX         4          100.0
+                            FD1P3AY         1          100.0
+                            FD1P3IX        21          100.0
+                             FD1S1A         2          100.0
+                            FD1S3AX         3          100.0
+                            FD1S3IX        13          100.0
+                                GSR         1          100.0
+                                 IB         4          100.0
+                               LUT4        28          100.0
+                                 OB        29          100.0
+                                OBZ         8          100.0
+                              PFUMX         5          100.0
+SUB MODULES
+                          Debouncer         1
+                      DisplayDriver         1
+                              TOTAL       139
+----------------------------------------------------------------------
+Report for cell DisplayDriver.v1
+Instance Path : display_output
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         7           38.9
+                            FD1P3AX         3           75.0
+                            FD1P3AY         1          100.0
+                            FD1S3IX        13          100.0
+                               LUT4        16           57.1
+                              PFUMX         5          100.0
+                              TOTAL        45
+----------------------------------------------------------------------
+Report for cell Debouncer.v1
+Instance Path : debouncing1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        11           61.1
+                            FD1P3AX         1           25.0
+                            FD1P3IX        21          100.0
+                            FD1S3AX         2           66.7
+                               LUT4        10           35.7
+                              TOTAL        45
