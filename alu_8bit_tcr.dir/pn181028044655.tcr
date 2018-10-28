@@ -1,0 +1,10 @@
+#Start recording tcl command: 10/27/2018 20:57:49
+#Project Location: D:/userdata/bruno.DESKTOP-N6S9QEB/Documents/Digital systems/Diamond/alu; Project name: alu_8bit
+prj_project open "D:/userdata/bruno.DESKTOP-N6S9QEB/Documents/Digital systems/Diamond/alu/alu_8bit.ldf"
+prj_project save
+prj_project save
+prj_src add "D:/userdata/bruno.DESKTOP-N6S9QEB/Documents/Digital systems/Diamond/alu/top.vhd"
+prj_src remove "D:/userdata/bruno.DESKTOP-N6S9QEB/Documents/Digital systems/Diamond/alu/top.vhd"
+prj_src add "D:/userdata/bruno.DESKTOP-N6S9QEB/Documents/Digital systems/Diamond/alu/impl1/source/top.vhd"
+prj_src remove "D:/userdata/bruno.DESKTOP-N6S9QEB/Documents/Digital systems/Diamond/alu/impl1/source/selector_unit.vhd"
+#Stop recording: 10/28/2018 04:46:55

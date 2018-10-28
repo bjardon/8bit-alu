@@ -1,0 +1,7 @@
+#Start recording tcl command: 10/26/2018 14:52:35
+#Project Location: D:/userdata/bruno.DESKTOP-N6S9QEB/Documents/Digital systems/Diamond/alu; Project name: alu_8bit
+prj_project open "D:/userdata/bruno.DESKTOP-N6S9QEB/Documents/Digital systems/Diamond/alu/alu_8bit.ldf"
+prj_src add "D:/userdata/bruno.DESKTOP-N6S9QEB/Documents/Digital systems/Diamond/alu/impl1/source/components/debouncer.vhd"
+prj_src add "D:/userdata/bruno.DESKTOP-N6S9QEB/Documents/Digital systems/Diamond/alu/impl1/source/components/decoder_7seg.vhd"
+prj_src add "D:/userdata/bruno.DESKTOP-N6S9QEB/Documents/Digital systems/Diamond/alu/impl1/source/components/double_dabble.vhd"
+#Stop recording: 10/26/2018 16:53:58
