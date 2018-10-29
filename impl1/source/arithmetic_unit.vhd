@@ -21,7 +21,7 @@ ENTITY ArithmeticUnit IS
 		x:			IN	std_logic_vector(7 DOWNTO 0);
 		y:			IN	std_logic_vector(7 DOWNTO 0);
 		selector: 	IN	std_logic_vector(1 DOWNTO 0);
-		z:			OUT std_logic_vector(7 DOWNTO 0)
+		z:			OUT std_logic_vector(8 DOWNTO 0)
 	);
 END ArithmeticUnit;
 
@@ -36,11 +36,11 @@ ARCHITECTURE Behavior OF ArithmeticUnit IS
 BEGIN
 
 	add_result <= std_logic_vector(unsigned('0' & x) + unsigned('0' & y));
-	sub_result <= std_logic_vector(signed('0' & x) + signed('0' & y));
+	sub_result <= std_logic_vector(signed('0' & x) - signed('0' & y));
 
 	WITH (enable & selector) SELECT z <=
 		add_result WHEN operation_add,
 		sub_result WHEN operation_sub,
-		"ZZZZZZZZ" WHEN OTHERS;
+		"ZZZZZZZZZ" WHEN OTHERS;
 
 END Behavior;

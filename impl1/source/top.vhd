@@ -29,7 +29,7 @@ ENTITY Top IS
 		 input_d:		OUT std_logic_vector(7 DOWNTO 0);
 		 register_d:	OUT std_logic_vector(7 DOWNTO 0);
 		 
-		 output:	 	OUT std_logic_vector(7 DOWNTO 0);
+		 bits:		 	OUT std_logic_vector(7 DOWNTO 0);
 		 segments: 		OUT std_logic_vector(7 DOWNTO 0);
 		 digits: 		OUT std_logic_vector(3 DOWNTO 0)
 	);
@@ -53,7 +53,7 @@ ARCHITECTURE Behavior OF Top IS
 		);
 	END COMPONENT;
 	
-	COMPONENT DecoderSevenSegments
+	COMPONENT DisplayDecoder
 		PORT(
 			bcd: 		IN 	std_logic_vector(3 DOWNTO 0);
 			sign: 		IN 	std_logic;
@@ -85,11 +85,11 @@ ARCHITECTURE Behavior OF Top IS
 	
 	COMPONENT ArithmeticUnit
 		PORT (
-			enable: 	IN 	std_logic_vector(7 DOWNTO 0);
+			enable: 	IN 	std_logic;
 			x:			IN	std_logic_vector(7 DOWNTO 0);
 			y:			IN	std_logic_vector(7 DOWNTO 0);
 			selector: 	IN	std_logic_vector(1 DOWNTO 0);
-			z:			OUT std_logic_vector(7 DOWNTO 0)
+			z:			OUT std_logic_vector(8 DOWNTO 0)
 		);
 	END COMPONENT;
 	
@@ -125,6 +125,14 @@ ARCHITECTURE Behavior OF Top IS
 	SIGNAL digit2: std_logic_vector(7 DOWNTO 0);
 	SIGNAL digit3: std_logic_vector(7 DOWNTO 0);
 	
+	SIGNAL bcd0: std_logic_vector(3 DOWNTO 0);
+	SIGNAL bcd1: std_logic_vector(3 DOWNTO 0);
+	SIGNAL bcd2: std_logic_vector(3 DOWNTO 0);
+	SIGNAL bcd3: std_logic_vector(3 DOWNTO 0);
+	
+	SIGNAL arith_output: std_logic_vector(8 DOWNTO 0);
+	SIGNAL logic_output: std_logic_vector(7 DOWNTO 0);
+	
 BEGIN
 
 	clock: OSCH PORT MAP ('0', clk);
@@ -139,26 +147,20 @@ BEGIN
 		END IF;
 	END PROCESS unit_switching;
 	
-	mode: PROCESS (unit_mux)
-		VARIABLE result: std_logic_vector(8 DOWNTO 0);
-	BEGIN
-		IF selector = "000" THEN
-			IF unit_mux = '0' THEN
-				digit0 <= logic_indicator0;
-				digit1 <= logic_indicator1;
-				digit2 <= logic_indicator2;
-				digit3 <= logic_indicator3;
-			ELSE
-				digit0 <= arith_indicator0;
-				digit1 <= arith_indicator1;
-				digit2 <= arith_indicator2;
-				digit3 <= arith_indicator3;
-			END IF;
-		END IF;
-	END PROCESS mode;
+	logic: 			LogicUnit		PORT MAP (clk, unit_mux, input, input_register, selector, triggerl_db, logic_output);
+	arith: 			ArithmeticUnit 	PORT MAP (unit_mux, input, input_register, selector(1 DOWNTO 0), arith_output);
+	double_dabble: 	DoubleDabble	PORT MAP (clk, arith_output, bcd0, bcd1, bcd2);
+	decoding0:		DisplayDecoder 	PORT MAP (bcd0, bcd0(3), digit0);
+	decoding1:		DisplayDecoder 	PORT MAP (bcd1, bcd1(3), digit1);
+	decoding2:		DisplayDecoder 	PORT MAP (bcd2, bcd2(3), digit2);
+	decoding3:		DisplayDecoder 	PORT MAP (bcd3, bcd3(3), digit3);
 	
-		
+	WITH (unit_mux & selector) SELECT digit0 <= logic_indicator0 WHEN "0000", arith_indicator0 WHEN "1000", digit0 WHEN OTHERS;
+	WITH (unit_mux & selector) SELECT digit1 <= logic_indicator1 WHEN "0000", arith_indicator1 WHEN "1000", digit1 WHEN OTHERS;
+	WITH (unit_mux & selector) SELECT digit2 <= logic_indicator2 WHEN "0000", arith_indicator2 WHEN "1000", digit2 WHEN OTHERS;
+	WITH (unit_mux & selector) SELECT digit3 <= logic_indicator3 WHEN "0000", arith_indicator3 WHEN "1000", digit3 WHEN OTHERS;
 	
 	display_output: DisplayDriver PORT MAP (clk, digit0, digit1, digit2, digit3, segments, digits);
+	bits <= logic_output;
 	
 END Behavior;

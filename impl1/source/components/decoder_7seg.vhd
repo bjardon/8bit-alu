@@ -14,15 +14,15 @@
 LIBRARY IEEE;
 USE IEEE.std_logic_1164.all;
 
-ENTITY DecoderSevenSegments IS
+ENTITY DisplayDecoder IS
 	PORT(
 		bcd: 		IN 	std_logic_vector(3 DOWNTO 0);
 		sign: 		IN 	std_logic;
 		segments: 	OUT std_logic_vector(7 DOWNTO 0)
 	);
-END DecoderSevenSegments;
+END DisplayDecoder;
 
-ARCHITECTURE Behavior OF DecoderSevenSegments IS
+ARCHITECTURE Behavior OF DisplayDecoder IS
 
 	CONSTANT digit0: std_logic_vector(7 DOWNTO 0) := "11111100";
 	CONSTANT digit1: std_logic_vector(7 DOWNTO 0) := "01100000";
