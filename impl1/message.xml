@@ -67,7 +67,7 @@
             <ID>35921012</ID>
             <Severity>Info</Severity>
             <Dynamic>d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/components/decoder_7seg.vhd(17): </Dynamic>
-            <Dynamic>decodersevensegments</Dynamic>
+            <Dynamic>displaydecoder</Dynamic>
             <Navigation>d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/components/decoder_7seg.vhd</Navigation>
             <Navigation>17</Navigation>
         </Message>
@@ -142,472 +142,42 @@
             <Dynamic>segments[7]</Dynamic>
         </Message>
         <Message>
-            <ID>35921251</ID>
+            <ID>35001714</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/top.vhd(145): </Dynamic>
-            <Dynamic>selector</Dynamic>
+            <Dynamic>digit0[7]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35921303</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/top.vhd(118): </Dynamic>
+            <Dynamic>&quot;UUUUUUUU&quot;</Dynamic>
+            <Dynamic>input_register</Dynamic>
             <Navigation>d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/top.vhd</Navigation>
-            <Navigation>145</Navigation>
+            <Navigation>118</Navigation>
         </Message>
         <Message>
-            <ID>35921613</ID>
+            <ID>35921303</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/top.vhd(158): </Dynamic>
+            <Dynamic>d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/top.vhd(131): </Dynamic>
+            <Dynamic>&quot;UUUU&quot;</Dynamic>
+            <Dynamic>bcd3</Dynamic>
             <Navigation>d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/top.vhd</Navigation>
-            <Navigation>158</Navigation>
+            <Navigation>131</Navigation>
         </Message>
         <Message>
-            <ID>35921205</ID>
+            <ID>35001714</ID>
             <Severity>Warning</Severity>
-            <Dynamic>d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/top.vhd(36): </Dynamic>
-            <Dynamic>Top</Dynamic>
-            <Dynamic>Behavior</Dynamic>
+            <Dynamic>digit0[7]</Dynamic>
+        </Message>
+        <Message>
+            <ID>35931000</ID>
+            <Severity>Error</Severity>
+            <Dynamic>d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/top.vhd(155): </Dynamic>
+            <Dynamic>digit0[7]</Dynamic>
+            <Dynamic>decoding2</Dynamic>
+            <Dynamic>segments[3]</Dynamic>
             <Navigation>d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/top.vhd</Navigation>
-            <Navigation>36</Navigation>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>trigger_al</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input[7]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input[6]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input[5]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input[4]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input[3]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input[0]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input_d[7]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input_d[6]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input_d[5]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input_d[4]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input_d[3]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input_d[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input_d[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input_d[0]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>register_d[7]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>register_d[6]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>register_d[5]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>register_d[4]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>register_d[3]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>register_d[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>register_d[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>register_d[0]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>output[7]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>output[6]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>output[5]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>output[4]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>output[3]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>output[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>output[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>output[0]</Dynamic>
-        </Message>
-        <Message>
-            <ID>1009991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/top.vhd(158): Latch digit0_7__I_0_i1 input is stuck at Zero
-</Dynamic>
-        </Message>
-        <Message>
-            <ID>1009991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/top.vhd(158): Latch digit1_7__I_0_i1 input is stuck at Zero
-</Dynamic>
-        </Message>
-        <Message>
-            <ID>1009991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/top.vhd(158): Latch digit2_7__I_0_i1 input is stuck at Zero
-</Dynamic>
-        </Message>
-        <Message>
-            <ID>1009991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/top.vhd(158): Latch digit3_7__I_0_i1 input is stuck at One
-</Dynamic>
-        </Message>
-        <Message>
-            <ID>1009991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/top.vhd(158): Latch digit0_7__I_0_i2 input is stuck at Zero
-</Dynamic>
-        </Message>
-        <Message>
-            <ID>1009991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/top.vhd(158): Latch digit0_7__I_0_i3 input is stuck at One
-</Dynamic>
-        </Message>
-        <Message>
-            <ID>1009991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/top.vhd(158): Latch digit0_7__I_0_i4 input is stuck at One
-</Dynamic>
-        </Message>
-        <Message>
-            <ID>1009991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/top.vhd(158): Latch digit1_7__I_0_i2 input is stuck at One
-</Dynamic>
-        </Message>
-        <Message>
-            <ID>1009991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/top.vhd(158): Latch digit1_7__I_0_i3 input is stuck at Zero
-</Dynamic>
-        </Message>
-        <Message>
-            <ID>1009991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/top.vhd(158): Latch digit1_7__I_0_i4 input is stuck at One
-</Dynamic>
-        </Message>
-        <Message>
-            <ID>1009991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/top.vhd(158): Latch digit1_7__I_0_i7 input is stuck at Zero
-</Dynamic>
-        </Message>
-        <Message>
-            <ID>1009991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/top.vhd(158): Latch digit1_7__I_0_i8 input is stuck at Zero
-</Dynamic>
-        </Message>
-        <Message>
-            <ID>1009991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/top.vhd(158): Latch digit3_7__I_0_i2 input is stuck at One
-</Dynamic>
-        </Message>
-        <Message>
-            <ID>1009991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/top.vhd(158): Latch digit3_7__I_0_i4 input is stuck at One
-</Dynamic>
-        </Message>
-        <Message>
-            <ID>1009991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/top.vhd(158): Latch digit3_7__I_0_i5 input is stuck at One
-</Dynamic>
-        </Message>
-        <Message>
-            <ID>1009991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/top.vhd(158): Latch digit3_7__I_0_i6 input is stuck at Zero
-</Dynamic>
-        </Message>
-        <Message>
-            <ID>1009991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/top.vhd(158): Latch digit3_7__I_0_i7 input is stuck at Zero
-</Dynamic>
-        </Message>
-        <Message>
-            <ID>1009991</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/top.vhd(158): Latch digit3_7__I_0_i8 input is stuck at Zero
-</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>trigger_al</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input[7]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input[6]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input[5]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input[4]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input[3]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input[0]</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001611</ID>
-            <Severity>Warning</Severity>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>trigger_al</Dynamic>
-            <Navigation>trigger_al</Navigation>
-        </Message>
-        <Message>
-            <ID>1166064</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input</Dynamic>
-            <Dynamic>trigger_al</Dynamic>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>input[7]</Dynamic>
-            <Navigation>input[7]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166064</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input</Dynamic>
-            <Dynamic>input[7]</Dynamic>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>input[6]</Dynamic>
-            <Navigation>input[6]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166064</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input</Dynamic>
-            <Dynamic>input[6]</Dynamic>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>input[5]</Dynamic>
-            <Navigation>input[5]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166064</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input</Dynamic>
-            <Dynamic>input[5]</Dynamic>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>input[4]</Dynamic>
-            <Navigation>input[4]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166064</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input</Dynamic>
-            <Dynamic>input[4]</Dynamic>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>input[3]</Dynamic>
-            <Navigation>input[3]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166064</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input</Dynamic>
-            <Dynamic>input[3]</Dynamic>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>input[2]</Dynamic>
-            <Navigation>input[2]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166064</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input</Dynamic>
-            <Dynamic>input[2]</Dynamic>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>input[1]</Dynamic>
-            <Navigation>input[1]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166064</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input</Dynamic>
-            <Dynamic>input[1]</Dynamic>
-        </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>input[0]</Dynamic>
-            <Navigation>input[0]</Navigation>
-        </Message>
-        <Message>
-            <ID>1166064</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input</Dynamic>
-            <Dynamic>input[0]</Dynamic>
-        </Message>
-        <Message>
-            <ID>1163101</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>18</Dynamic>
+            <Navigation>155</Navigation>
         </Message>
     </Task>
 </BaliMessageLog>

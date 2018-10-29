@@ -2,23 +2,26 @@
 <BaliProject version="3.2" title="alu_8bit" device="LCMXO2-7000HE-4TG144C" default_implementation="impl1">
     <Options/>
     <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
-        <Options def_top="DoubleDabble"/>
+        <Options def_top="Top" top="Top"/>
         <Source name="impl1/source/arithmetic_unit.vhd" type="VHDL" type_short="VHDL">
-            <Options top_module="ArithmeticUnit"/>
+            <Options/>
         </Source>
         <Source name="impl1/source/logic_unit.vhd" type="VHDL" type_short="VHDL">
-            <Options top_module="LogicUnit"/>
+            <Options/>
         </Source>
         <Source name="impl1/source/components/debouncer.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
         <Source name="impl1/source/components/decoder_7seg.vhd" type="VHDL" type_short="VHDL">
-            <Options top_module="DecoderSevenSegments"/>
+            <Options/>
         </Source>
         <Source name="impl1/source/components/double_dabble.vhd" type="VHDL" type_short="VHDL">
-            <Options top_module="DoubleDabble"/>
+            <Options/>
         </Source>
         <Source name="impl1/source/top.vhd" type="VHDL" type_short="VHDL">
+            <Options top_module="Top"/>
+        </Source>
+        <Source name="impl1/source/components/display_driver.vhd" type="VHDL" type_short="VHDL">
             <Options/>
         </Source>
         <Source name="alu_8bit.lpf" type="Logic Preference" type_short="LPF">

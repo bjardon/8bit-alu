@@ -1,3 +1,15 @@
+synthesis:  version Diamond (64-bit) 3.10.0.111.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+Mon Oct 29 09:00:30 2018
+
+
+Command Line:  synthesis -f alu_8bit_impl1_lattice.synproj -gui -msgset D:/userdata/bruno.DESKTOP-N6S9QEB/Documents/Digital systems/Diamond/alu/promote.xml 
+
 Synthesis options:
 The -a option is MachXO2.
 The -s option is 4.
@@ -80,46 +92,4 @@ INFO - synthesis: d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/di
 INFO - synthesis: d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/logic_unit.vhd(31): analyzing architecture behavior. VHDL-1010
 unit Top is not yet analyzed. VHDL-1485
 Analyzing VHDL file d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/components/debouncer.vhd. VHDL-1481
-INFO - synthesis: d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/components/debouncer.vhd(18): analyzing entity debouncer. VHDL-1012
-INFO - synthesis: d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/components/debouncer.vhd(28): analyzing architecture behavior. VHDL-1010
-unit Top is not yet analyzed. VHDL-1485
-Analyzing VHDL file d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/components/decoder_7seg.vhd. VHDL-1481
-INFO - synthesis: d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/components/decoder_7seg.vhd(17): analyzing entity displaydecoder. VHDL-1012
-INFO - synthesis: d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/components/decoder_7seg.vhd(25): analyzing architecture behavior. VHDL-1010
-unit Top is not yet analyzed. VHDL-1485
-Analyzing VHDL file d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/components/double_dabble.vhd. VHDL-1481
-INFO - synthesis: d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/components/double_dabble.vhd(18): analyzing entity doubledabble. VHDL-1012
-INFO - synthesis: d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/components/double_dabble.vhd(28): analyzing architecture behavior. VHDL-1010
-unit Top is not yet analyzed. VHDL-1485
-Analyzing VHDL file d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/top.vhd. VHDL-1481
-WARNING - synthesis: d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/top.vhd(19): 'components' is not compiled in library lattice. VHDL-1240
-INFO - synthesis: d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/top.vhd(21): analyzing entity top. VHDL-1012
-INFO - synthesis: d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/top.vhd(38): analyzing architecture behavior. VHDL-1010
-unit Top is not yet analyzed. VHDL-1485
-unit Top is not yet analyzed. VHDL-1485
-Analyzing VHDL file d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/components/display_driver.vhd. VHDL-1481
-INFO - synthesis: d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/components/display_driver.vhd(18): analyzing entity displaydriver. VHDL-1012
-INFO - synthesis: d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/components/display_driver.vhd(30): analyzing architecture behavior. VHDL-1010
-unit Top is not yet analyzed. VHDL-1485
-unit Top is not yet analyzed. VHDL-1485
-WARNING - synthesis: Net segments[7] has following drivers :
-WARNING - synthesis: Net digit0[7] has following drivers :
-unit Top is not yet analyzed. VHDL-1485
-d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/top.vhd(21): executing Top(Behavior)
-
-WARNING - synthesis: d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/top.vhd(118): using initial value "UUUUUUUU" for input_register since it is never assigned. VHDL-1303
-WARNING - synthesis: d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/top.vhd(131): using initial value "UUUU" for bcd3 since it is never assigned. VHDL-1303
-WARNING - synthesis: Net digit0[7] has following drivers :
-	 instance decoding3
-
-	 instance decoding2
-
-	 instance decoding0
-
-	 instance decoding0
-
-	 instance decoding0
-
-	 instance dlatchrs_237
-
-ERROR - synthesis: d:/userdata/bruno.desktop-n6s9qeb/documents/digital systems/diamond/alu/impl1/source/top.vhd(155): net digit0[7] is constantly driven from multiple places at instance decoding2, on port segments[3]. VDB-1000
+INFO - synthesis: d:/userdata/bruno.desktop-n6s9
